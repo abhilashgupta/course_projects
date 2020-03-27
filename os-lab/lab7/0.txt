@@ -1,0 +1,6 @@
+send 2 "hello_2_from_0"
+recv
+send 3 "hello_3_from_0"
+recv
+send 1 "hello_1_from_0"
+recv
