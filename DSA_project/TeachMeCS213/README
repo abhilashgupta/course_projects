@@ -1,0 +1,26 @@
+If we are not working on the CS293 machine,
+1. Download the Teach-me-CS213.tar.gz folder from moodle.
+2. Copy this tar folder to the CS293 machine using scp Teach-me-CS213.tar.gz yourlogin@10.105.2.101:
+3.Now ssh to the cs293 machine:
+ssh -X yourlogin@10.105.2.101
+
+Then start from the 3rd point given below to compile and run the project
+
+Assuming we are working on the CS293 Machine.
+To start the project, the following steps are to be undertaken:
+1. Download the Teach-me-CS213.tar.gz folder from moodle.
+Then on the Terminal,
+2. Untar it using tar -zxvf *.tar.gz
+3. Change directory to go into the Newly created Teach-me-CS213 by using cd Teach-me-CS213
+4. Remove all the .o files (if any)  using rm *.o
+5. Remove all the moc_*.cpp files(if any) by using rm moc_*
+6. As it is a Qt project compile it using qmake
+7. Then run make ( everything should be okay except a few warnings about comparision between signed int and unsigned int)
+8. An executable by the name cs213 will be made. call it by giving the command ./cs213
+9. the program will start and continue playing with the ADT implementations provided
+
+ALternatively after step 5,
+6. call qtcreator by giving the command qtcreator
+7. the Qt IDE will start and from the menu select "open project"
+8. browse and select cs213.pro file from the Teach-me-CS213 folder
+9. Build it and run it
